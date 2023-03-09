@@ -185,7 +185,9 @@ def run_group_recall(numruns, list_length, category_size, group_size):
 
 
 def main():
-    print(run_group_recall(10, 90, 15, 3))
+    #to reproduce Figure 3 in paper set category size parameter to 15
+    #to reproduce Figure 4 in paper set category size parameter to 6
+    print(run_group_recall(100, 90, 15, 3))
 
 if __name__ == "__main__":
     main()  
