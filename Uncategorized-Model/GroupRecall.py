@@ -34,8 +34,7 @@ def get_fastest_response(r, accum_time): #helper function for group_context_reca
 
 def group_context_recall(group, accum_time): 
     #all models start off doing context recall at the same time. Whichever finishes first "wins" and that response is added
-    #to the group_response vector output of context_recall = time taken to produce response, response, K, and timestamps for retrieval failures
-    
+
     r = []
     total_time = []
     for g in group:
