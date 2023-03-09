@@ -12,9 +12,6 @@ class SAM_Nominal_Uncategorized:
     def __init__(self, ListLength, t=2, r=4, sam_a = .08, sam_b = .08, sam_c = .08, 
                  sam_d = .02, sam_e = 0.7, sam_f = 0.7, sam_g = 0.7, Kmax = 30, Lmax = 3):
 
-        #Parameter settings based on parameter estimation in first paper:
-        #sam_e = 0.7, sam_f = 0.72, sam_g = 0.7
-
         ''' ListLength = number of items in studylist, 
         t = presentation time per word
         r = short term memory buffer
@@ -28,8 +25,6 @@ class SAM_Nominal_Uncategorized:
         Kmax = maximum number of retrieval failures before search process is stopped
         Lmax = max number of retrieval attempts using word cues instead of context
         '''
-        
-
 
         self.ListLength = ListLength
         self.t = t
